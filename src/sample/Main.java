@@ -18,7 +18,7 @@ public class Main extends Application {
         this.stage = stage;
 
         pane = (AnchorPane) FXMLLoader.load(Main.class.getResource("sample.fxml"));
-        scene = new Scene(pane, 600, 300);
+        scene = new Scene(pane, 500, 500);
         stage.setScene(scene);
         stage.show();
     }

@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Menu?>
-<?import javafx.scene.control.MenuBar?>
-<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.ColorAdjust?>
 <?import javafx.scene.layout.AnchorPane?>
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
 
    <children>
-      <Button fx:id="button" layoutX="177.0" layoutY="165.0" mnemonicParsing="false" onAction="#initialize" text="Send" />
+       <Button fx:id="button" layoutX="277.0" layoutY="315.0" mnemonicParsing="false" onAction="#initialize"
+               text="Login"/>
       <MenuBar layoutY="2.0">
         <menus>
           <Menu mnemonicParsing="false" text="File">
@@ -29,5 +27,15 @@
           </Menu>
         </menus>
       </MenuBar>
+       <Button layoutX="206.0" layoutY="315.0" mnemonicParsing="false" text="Cancel"/>
+       <PasswordField layoutX="185.0" layoutY="275.0" promptText="password:"/>
+       <Label layoutX="185.0" layoutY="250.0" text="Password:"/>
+       <TextField fx:id="login" layoutX="185.0" layoutY="216.0" onAction="#initialize"/>
+       <Label layoutX="185.0" layoutY="187.0" text="Login:"/>
+       <TextField fx:id="stateOfMistake" layoutX="184.0" layoutY="126.0" onAction="#initialize" prefHeight="25.0"
+                  prefWidth="160.0"/>
    </children>
+    <effect>
+        <ColorAdjust/>
+    </effect>
 </AnchorPane>
