@@ -1,0 +1,17 @@
+.root
+{
+display:block;
+-fx-background-color: #ccf4b4;
+}
+.text
+{
+-fx-text-fill:green;
+}
+.font
+{
+-fx-background-color: #fcfca4;
+}
+.green
+{
+-fx-background-color: #ccf4b4;
+}

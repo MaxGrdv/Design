@@ -3,39 +3,32 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.effect.ColorAdjust?>
 <?import javafx.scene.layout.AnchorPane?>
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<?import javafx.scene.text.Font?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+            prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="sample.Controller">
 
-   <children>
-       <Button fx:id="button" layoutX="277.0" layoutY="315.0" mnemonicParsing="false" onAction="#initialize"
-               text="Login"/>
-      <MenuBar layoutY="2.0">
-        <menus>
-          <Menu mnemonicParsing="false" text="File">
-            <items>
-              <MenuItem mnemonicParsing="false" text="Close" />
-            </items>
-          </Menu>
-          <Menu mnemonicParsing="false" text="Edit">
-            <items>
-              <MenuItem mnemonicParsing="false" text="Delete" />
-            </items>
-          </Menu>
-          <Menu mnemonicParsing="false" text="Help">
-            <items>
-              <MenuItem mnemonicParsing="false" text="About" />
-            </items>
-          </Menu>
-        </menus>
-      </MenuBar>
-       <Button layoutX="206.0" layoutY="315.0" mnemonicParsing="false" text="Cancel"/>
-       <PasswordField layoutX="185.0" layoutY="275.0" promptText="password:"/>
-       <Label layoutX="185.0" layoutY="250.0" text="Password:"/>
-       <TextField fx:id="login" layoutX="185.0" layoutY="216.0" onAction="#initialize"/>
-       <Label layoutX="185.0" layoutY="187.0" text="Login:"/>
-       <TextField fx:id="stateOfMistake" layoutX="184.0" layoutY="126.0" onAction="#initialize" prefHeight="25.0"
-                  prefWidth="160.0"/>
-   </children>
     <effect>
         <ColorAdjust/>
     </effect>
+    <Button fx:id="button" layoutX="302.0" layoutY="339.0" mnemonicParsing="false" onAction="#initialize"
+            prefHeight="34.0" prefWidth="40.0" styleClass="text" stylesheets="@window.css" text="OK"/>
+    <Button layoutX="176.0" layoutY="339.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="105.0"
+            styleClass="text" stylesheets="@window.css" text="REGISTRATION"/>
+    <PasswordField layoutX="176.0" layoutY="275.0" prefHeight="34.0" prefWidth="168.0" promptText="password:"
+                   styleClass="font" stylesheets="@window.css"/>
+    <TextField fx:id="login" layoutX="176.0" layoutY="216.0" onAction="#initialize" prefHeight="34.0"
+               prefWidth="168.0" styleClass="green" stylesheets="@window.css"/>
+    <Label layoutX="163.0" layoutY="157.0" prefHeight="44.0" prefWidth="191.0" styleClass="text"
+           stylesheets="@window.css" text="SIGN IN TO CHAT">
+        <font>
+            <Font size="24.0"/>
+        </font>
+    </Label>
+    <TextField alignment="TOP_CENTER" layoutY="-1.0" prefHeight="34.0" prefWidth="600.0" styleClass="root"
+               stylesheets="@window.css" text="Application Name">
+        <font>
+            <Font size="20.0"/>
+        </font>
+    </TextField>
 </AnchorPane>

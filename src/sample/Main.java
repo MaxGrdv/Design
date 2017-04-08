@@ -8,17 +8,13 @@ import javafx.stage.Stage;
 
 
 public class Main extends Application {
-    private Stage stage;
-    private Scene scene;
-    private AnchorPane pane;
 
 
     @Override
     public void start(Stage stage) throws Exception {
-        this.stage = stage;
 
-        pane = (AnchorPane) FXMLLoader.load(Main.class.getResource("sample.fxml"));
-        scene = new Scene(pane, 500, 500);
+        AnchorPane pane = FXMLLoader.load(Main.class.getResource("sample.fxml"));
+        Scene scene = new Scene(pane, 500, 500);
         stage.setScene(scene);
         stage.show();
     }
